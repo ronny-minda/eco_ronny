@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./santa_ana.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+    cursor: url("cursordefault.png"), auto;
+    overflow: hidden;
+    background-color: #704237;
+}
+
+
+nav {
+    position: fixed;
+    right: 1%;
+    top: 10%;
+}
+
+
+
+nav li {
+    position: relative;
+    text-align: end;
+    list-style: none;
+    color: #ffffff;
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav li a {
+    transition: 0.4s ease;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 65px;
+    font-family: 'Roboto', sans-serif;
+    cursor: url("cursorpointer.png"), auto;
+}
+
+nav li a:hover {
+    transition: 0.8s ease;
+    color: #b3bbe7;
+    font-size: 75px;
+}
+
+
+.base {
+    /* height: 100vh; */
+    /* transform-origin: 100% 100%; */
+}
+
+.male_slado, .estatua_li, .rueda, .torre, .pintura {
+    transition: 0.8s ease;
+}
+
+.male_slado:hover, .estatua_li:hover, .rueda:hover , .torre:hover, .pintura:hover {
+    transition: 0.4s ease;
+    transform: translate(0px, -10px);
+}
+
+
+.Rueda_a {
+    /* transition: 0.8s ease; */
+    animation: mymove 5s linear infinite;
+    /* transform: rotate(45deg) rotate(-45deg); */
+  transform-origin: 73.11% 50.2%;
+    
+}
+
+@keyframes mymove {
+    100% {
+        /* transform-origin: 0% 0%; */
+        transform: rotate(360deg);
+     
+    }
+}
+/* .Rueda_a:hover {
+    transition: 0.4s ease;
+    transform: translate(0px, -10px);
+} */
